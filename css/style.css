@@ -1,3 +1,21 @@
 body {
     background: #F8F8F8;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 48px;
+    font-family: "ClearSans_B";
+    color: #5198BC;
+}
+
+a {
+    font-family: "ClearSans_MR";
+    font-size: 16px;
+    color: #333333;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
 }
