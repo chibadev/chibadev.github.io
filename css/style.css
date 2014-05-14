@@ -1,13 +1,95 @@
-body {
-    background: #F8F8F8;
-    text-align: center;
+/* RESET BEGIN */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, input, textarea, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-h1 {
-    font-size: 36px;
-    line-height: 48px;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* RESET END */
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    background: url(/img/bg_01.jpg) no-repeat;
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
     font-family: "ClearSans_B";
-    color: #5198BC;
+}
+h1 {
+    font-size: 68px;
+    line-height: 82px;
+}
+h2 {
+    font-size: 52px;
+    line-height: 64px;
+}
+h3 {
+    font-size: 44px;
+    line-height: 54px;
+}
+h4 {
+    font-size: 32px;
+    line-height: 44px;
+}
+h5 {
+    font-size: 24px;
+    line-height: 32px;
+}
+h6 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#main h1,
+#main h2,
+#main h3,
+#main h4,
+#main h5,
+#main h6 {
+    color: #fff;
+    text-shadow: 1px 1px 10px #000;
 }
 
 a {
@@ -18,4 +100,192 @@ a {
 }
 a:hover {
     text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+    clear: both;
+}
+.btn {
+    display: block;
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    font-family: "ClearSans_MR";
+    text-align: center;
+    text-decoration: none;
+    background: #1B4A53;
+    color: #fff;
+    -webkit-transition: background 0.25s ease;
+    -moz-transition: background 0.25s ease;
+    -ms-transition: background 0.25s ease;
+    -o-transition: background 0.25s ease;
+    transition: background 0.25s ease;
+}
+.btn:hover {
+    background: #346C77;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.5);
+    clear: both;
+    z-index: 99;
+}
+#header .nav {
+    height: inherit;
+    clear: both;
+}
+#header .nav li {
+    display: inline-block;
+    float: left;
+    height: inherit;
+    line-height: 60px;
+    padding: 0 25px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-family: "ClearSans_MR";
+    background: none;
+    cursor: pointer;
+    -webkit-transition: background 0.25s ease;
+    -moz-transition: background 0.25s ease;
+    -ms-transition: background 0.25s ease;
+    -o-transition: background 0.25s ease;
+    transition: background 0.25s ease;
+}
+#header .nav li:hover {
+    background: rgba(0,0,0,0.25);
+}
+
+#main,
+#works,
+#about {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#main .container,
+#works .container,
+#about .container {
+    padding-top: 120px;
+}
+
+#main {
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1;
+}
+#main .social {
+    display: block;
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    width: 420px;
+    overflow: hidden;
+    clear: both;
+}
+#main .social li {
+    display: inline-block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    width: 140px;
+    text-align: center;
+    color: #fff;
+}
+#main .social a {
+    color: #fff;
+    font-size: 18px;
+    font-family: "ClearSans_B";
+    text-decoration: none;
+    text-shadow: 1px 1px 5px #000;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+#main .social a:hover {
+    font-size: 22px;
+    margin-top: -2px;
+}
+.to-works {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.to-works .fa-angle-down {
+    margin-top: -30px;
+}
+
+#works {
+    top: 100%;
+    /*top: 0;*/
+    left: 0;
+    background: #fff;
+    box-shadow: 0 0 25px 0 #000;
+    z-index: 2;
+}
+#works .item {
+     height: 200px;
+     float: left;
+     width: 460px;
+     margin: 0 10px 20px 10px;
+     padding: 10px;
+     background: #fff;
+     border: 1px solid #CCDADD;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+#works .item .empty {
+    color: #ccc;
+    font-size: 28px;
+    text-align: center;
+    line-height: 180px;
+}
+#works .item .head {
+    overflow: hidden;
+    clear: both;
+}
+#works .item .title {
+    float: left;
+    color: #1B4A53;
+}
+#works .item .description {
+    padding: 15px 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "ClearSans_R";
+}
+#works .demo,
+#works .download {
+    float: right;
+    margin-left: 10px;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+#about {
+    top: 0;
+    left: 100%;
+    background: #fff;
+    z-index: 2;
 }
