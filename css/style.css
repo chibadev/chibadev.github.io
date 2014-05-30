@@ -161,7 +161,10 @@ a:hover {
     transition: background 0.25s ease;
 }
 #header .nav li:hover {
-    background: rgba(0,0,0,0.25);
+    background: rgba(42, 116, 134, 0.25);
+}
+#header .nav li.hover {
+    background: rgba(42, 116, 134, 0.25);
 }
 
 #main,
@@ -235,7 +238,6 @@ a:hover {
 
 #works {
     top: 100%;
-    /*top: 0;*/
     left: 0;
     background: #fff;
     box-shadow: 0 0 25px 0 #000;
