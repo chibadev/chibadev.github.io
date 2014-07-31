@@ -95,3 +95,13 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'noto_sansregular';
+    src: url('../fonts/NotoSans-Regular-webfont.eot');
+    src: url('../fonts/NotoSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/NotoSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/NotoSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/NotoSans-Regular-webfont.svg#noto_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
