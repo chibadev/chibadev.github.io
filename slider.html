@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Chibadev.github.io" />
+        <meta name="keywords" content="Followeyes.js, HTML, CSS, JavaScript, jQuery" />
+        <meta name="author" content="Ivan Ryabov" />
+
+        <link rel="stylesheet" type="text/css" media="screen" href="css/fonts.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
+
+        <title>Chibadev.github.io</title>
+
+        <style>
+            .slide-red,
+            .slide-green,
+            .slide-blue {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+            }
+            .slide-red {
+                background: rgba(255, 0, 0, 0.5);
+            }
+            .slide-green {
+                background: rgba(0, 255, 0, 0.5);
+            }
+            .slide-blue {
+                background: rgba(0, 0, 255, 0.5);
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="header">
+            <div class="container">
+                <ul class="nav">
+                    <li class="target" target="main">Home</li>
+                    <li class="target" target="works">Works</li>
+                    <li class="target" target="about">About Me</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="container">
+                <div class="slider">
+                    <ul class="slider-content">
+                        <li slide-num="1" class="active">
+                            <div class="slide-red"></div>
+                            <div class="text">Текст на слайде 1</div>
+                        </li>
+                        <li slide-num="2">
+                            <div class="slide-green"></div>
+                            <div class="text">Текст на слайде 2</div>
+                        </li>
+                        <li slide-num="3">
+                            <div class="slide-blue"></div>
+                            <div class="text">Текст на слайде 3</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="js/slider.js"></script>
+
+    </body>
+</html>
