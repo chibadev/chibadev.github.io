@@ -17,3 +17,28 @@
 [Wed Jun 11 07:53:30 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico
 [Mon Jul 07 11:29:42 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico
 [Mon Jul 07 11:38:07 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico
+[Sun Aug 10 15:31:52 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico
+[Sun Aug 10 16:15:45 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/framework/css/font-awesome.css, referer: http://chibadev.github.dev/framework/
+[Sun Aug 10 16:16:06 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/framework/css/font-awesome.css, referer: http://chibadev.github.dev/framework/
+[Sun Aug 10 16:31:53 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/framework/css/font-awesome.css, referer: http://chibadev.github.dev/framework/
+[Sun Aug 10 16:32:06 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/framework/css/font-awesome.css, referer: http://chibadev.github.dev/framework/
+[Sun Aug 10 16:47:52 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/framework/css/font-awesome.css, referer: http://chibadev.github.dev/framework/
+[Sun Aug 10 16:47:53 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/framework/css/font-awesome.css, referer: http://chibadev.github.dev/framework/
+[Sun Aug 10 22:59:20 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico, referer: http://chibadev.github.dev/
+[Sun Aug 10 22:59:59 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico, referer: http://chibadev.github.dev/framework/
+[Sun Aug 10 23:02:43 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico
+[Sun Aug 10 23:02:44 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico
+[Mon Aug 11 07:28:59 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico
+[Mon Aug 11 14:35:50 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/framework/css/font-awesome.css, referer: http://chibadev.github.dev/framework/
+[Mon Aug 11 14:47:28 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/framework/fonts, referer: http://chibadev.github.dev/framework/
+[Mon Aug 11 14:47:28 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/framework/fonts, referer: http://chibadev.github.dev/framework/
+[Mon Aug 11 14:47:28 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/framework/fonts, referer: http://chibadev.github.dev/framework/
+[Mon Aug 11 14:51:42 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/framework/fonts, referer: http://chibadev.github.dev/framework/
+[Mon Aug 11 14:51:42 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/framework/fonts, referer: http://chibadev.github.dev/framework/
+[Mon Aug 11 14:51:42 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/framework/fonts, referer: http://chibadev.github.dev/framework/
+[Mon Aug 11 14:51:43 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/framework/fonts, referer: http://chibadev.github.dev/framework/
+[Mon Aug 11 14:51:43 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/framework/fonts, referer: http://chibadev.github.dev/framework/
+[Mon Aug 11 14:51:43 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/framework/fonts, referer: http://chibadev.github.dev/framework/
+[Mon Aug 11 15:29:15 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico
+[Tue Aug 12 07:20:05 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico
+[Tue Aug 12 10:13:05 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico
