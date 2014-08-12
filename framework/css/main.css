@@ -10,8 +10,9 @@ body {
 .demo-box {
     position: relative;
     width: 1024px;
+    height: 165px;
     margin: 0 auto;
-    padding: 15px 0;
+    padding-top: 15px;
     border: 1px solid #DDD;
     border-radius: 3px;
     background: #EFEFEF;
