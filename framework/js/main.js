@@ -32,3 +32,16 @@ jQuery(document).ready(function() {
     });
 
 });
+
+jQuery(window).load(function() {
+    var demo1 = jQuery('.demo-1'),
+        cell = demo1.find('.cell'),
+        cellInterval = 0;
+
+    cell.each(function() {
+        cellInterval = cellInterval + 5;
+        jQuery(this).delay(cellInterval * 10).animate({
+            top: 0
+        }, 1000, 'easeOutBack');
+    });
+});

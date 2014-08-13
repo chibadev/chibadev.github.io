@@ -1,25 +1,27 @@
 body {
     background: #fff;
     color: #302E2D;
-    font-family: "Fira Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .demo {
+    padding-top: 15px;
     background: #EFEFEF;
 }
 .demo-box {
     position: relative;
     width: 1024px;
-    height: 165px;
+    height: 180px;
     margin: 0 auto;
-    padding-top: 15px;
     border: 1px solid #DDD;
     border-radius: 3px;
     background: #EFEFEF;
-    overflow: hidden;
+    /*overflow: hidden;*/
     clear: both;
 }
 .demo .cell {
+    position: relative;
+    top: 200px;
     margin-bottom: 15px;
 }
 .demo .cell > div {
