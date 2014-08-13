@@ -1,3 +1,17 @@
+function demoBoxresize(frame, box, curRes) {
+    var demoSrc = frame.src;
+    frame.src = '';
+    frame.src = demoSrc;
+
+    box.animate({
+        width: curRes.attr('data-res')
+    }, 400, function() {
+        box.animate({
+            height: frame.contents().find('html').height() - 30
+        }, 400);
+    });
+}
+
 jQuery(document).ready(function() {
 
     var resolutions = jQuery('.resolutions'),
@@ -8,22 +22,13 @@ jQuery(document).ready(function() {
     res.on('click', function() {
         curRes = jQuery(this);
         
-        res.each(function() {
-            jQuery(this).removeClass('active');
-        });
+        curRes.siblings('li').removeClass('active');
+
+        if (!curRes.hasClass('active')) {
+            demoBoxresize(frame, box, curRes);
+        }
 
         curRes.addClass('active');
-        box.animate({
-            width: jQuery(this).attr('data-res')
-        }, 400, function() {
-            var demoSrc = frame.src;
-            frame.src = '';
-            frame.src = demoSrc;
-
-            box.animate({
-                height: frame.contents().find('body').height()
-            }, 400);
-        });
     });
 
 });
