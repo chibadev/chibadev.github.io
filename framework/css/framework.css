@@ -78,6 +78,7 @@ table {
 
 /* Grid. BEGIN */
 
+.s-0 { display: none; }
 .s-1 { width: 8.333333333333333%; }
 .s-2 { width: 16.66666666666667%; }
 .s-3 { width: 25%; }
@@ -137,7 +138,8 @@ table {
         margin: 0 auto;
         width: 700px;
     }
-
+    
+    .m-0 { display: none; }
     .m-1 { width: 8.333333333333333%; }
     .m-2 { width: 16.66666666666667%; }
     .m-3 { width: 25%; }
@@ -192,6 +194,7 @@ table {
         width: 960px;
     }
 
+    .l-0 { display: none; }
     .l-1 { width: 8.333333333333333%; }
     .l-2 { width: 16.66666666666667%; }
     .l-3 { width: 25%; }
