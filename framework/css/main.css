@@ -87,6 +87,7 @@ h2 {
 }
 .name-twin {
     position: absolute;
+    display: none;
 }
 .description {
     position: relative;

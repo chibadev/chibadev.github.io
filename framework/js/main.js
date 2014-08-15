@@ -109,6 +109,7 @@ function letsTry() {
         top: 70
     }, 500, 'easeOutCirc');
 
+    e.nameTwin.css('display', 'block');
     e.nameTwin.animate({
         top: -15
     }, 500, 'easeOutCirc');
