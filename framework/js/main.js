@@ -8,7 +8,8 @@ function init() {
         description: jQuery('.description'),
         header: jQuery('.header'),
         item: jQuery('.item'),
-        content: jQuery('.content'),
+        demo: jQuery('.content-demo'),
+        docs: jQuery('.content-docs'),
         sectionMainBot: jQuery('.main-bot'),
         windowWidth: jQuery(window).width(),
         windowHeight: jQuery(window).height(),
@@ -32,6 +33,31 @@ function start() {
         top: barTop + barHeight,
         height: e.windowHeight - barTop - barHeight
     });
+
+    var box = jQuery('.demo-box'),
+        frame = box.find('.demo-iframe');
+
+    if (e.demo.hasClass('hidden')) {
+        if (e.windowWidth >= 960) {
+            winWidth = 960;
+        } else if (e.windowWidth < 960 && e.windowWidth >= 768) {
+            winWidth = 768;
+        } else if (e.windowWidth < 768 && e.windowWidth >= 640) {
+            winWidth = 640;
+        } else if (e.windowWidth < 640 && e.windowWidth >= 480) {
+            winWidth = 480;
+        }
+
+        demoBoxResize(frame, box, winWidth);
+
+        var res = jQuery('.resolutions').find('li');
+
+        res.each(function() {
+            if (jQuery(this).attr('data-res') == winWidth) {
+                jQuery(this).addClass('active');
+            }
+        });
+    }
 
     e.bar.animate({
         top: barTop,
@@ -60,30 +86,39 @@ function start() {
             e.interval = e.interval + 5;
         });
     });
+
+
 }
 
-function demoBoxresize(frame, box, curRes) {
+function demoBoxResize(frame, box, curRes) {
     var demoSrc = frame.src;
     frame.src = '';
     frame.src = demoSrc;
-
-    console.log(frame.contents().find('html').height());
-    console.log(demoSrc);
+    var boxHeight;
 
     box.animate({
-        width: curRes.attr('data-res')
+        width: curRes
     }, 800, function() {
-        switch(curRes.attr('data-res')) {
+        switch(curRes) {
             case '480':
+                boxHeight = 400;
+                break;
+            case '540':
                 boxHeight = 400;
                 break;
             case '640':
                 boxHeight = 400;
                 break;
+            case '720':
+                boxHeight = 290;
+                break;
             case '768':
                 boxHeight = 290;
                 break;
-            case '1024':
+            case '800':
+                boxHeight = 290;
+                break;
+            case '960':
                 boxHeight = 180;
                 break;
         }
@@ -118,12 +153,14 @@ function letsTry() {
         top: 100,
         opacity: 0
     }, 400, 'easeOutCirc', function() {
+        jQuery(this).addClass('hidden');
         jQuery(this).css('display', 'none');
-        e.content.css('display', 'block');
-        e.content.animate({
+        e.demo.css('display', 'block');
+        e.demo.animate({
             top: e.bar.height() + 60,
             opacity: 1
         }, 400, 'easeOutCirc', function() {
+            jQuery(this).removeClass('hidden');
             jQuery('body').css('overflow', 'auto');
         });
     });
@@ -146,7 +183,7 @@ jQuery(document).ready(function() {
         curRes.siblings('li').removeClass('active');
 
         if (!curRes.hasClass('active')) {
-            demoBoxresize(frame, box, curRes);
+            demoBoxResize(frame, box, curRes.attr('data-res'));
         }
 
         curRes.addClass('active');

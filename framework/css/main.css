@@ -4,7 +4,8 @@ html > body {
 }
 
 body {
-    background: url(../img/cream_pixels.png);
+    /*background: url(../img/cream_pixels.png);*/
+    background: url(../img/square_bg.png);
     color: #302E2D;
     font-family: "Roboto", sans-serif;
     overflow: hidden;
@@ -58,7 +59,7 @@ h2 {
 .demo .cell > div:hover {
     height: 40px;
     line-height: 40px;
-    background-color: #7e968a;
+    background-color: #29545D;
     border-radius: 3px;
 }
 
@@ -74,7 +75,6 @@ h2 {
     top: 0;
     width: 100%;
     height: 100%;
-    /*background: #123C48;*/
     background: url(../img/bg_01.jpg) 50% 50%;
     background-size: cover;
     box-shadow: 0 1px 6px -1px #000;
@@ -128,7 +128,7 @@ h2 {
     font-weight: 300;
 }
 
-.content {
+.content-demo {
     position: absolute;
     top: 500px;
     width: 100%;
