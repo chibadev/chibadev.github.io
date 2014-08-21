@@ -34,29 +34,28 @@ function start() {
         height: e.windowHeight - barTop - barHeight
     });
 
-    var box = jQuery('.demo-box'),
-        frame = box.find('.demo-iframe');
+    var box = jQuery('.demo-box');
 
     if (e.demo.hasClass('hidden')) {
         if (e.windowWidth >= 960) {
-            winWidth = 960;
+            curRes = 960;
         } else if (e.windowWidth < 960 && e.windowWidth >= 768) {
-            winWidth = 768;
+            curRes = 768;
         } else if (e.windowWidth < 768 && e.windowWidth >= 640) {
-            winWidth = 640;
+            curRes = 640;
         } else if (e.windowWidth < 640 && e.windowWidth >= 480) {
-            winWidth = 480;
+            curRes = 480;
         }
 
-        demoBoxResize(frame, box, winWidth);
+        demoBoxResize(box, curRes);
 
-        var res = jQuery('.resolutions').find('li');
+        /*var res = jQuery('.resolutions').find('li');
 
         res.each(function() {
             if (jQuery(this).attr('data-res') == winWidth) {
                 jQuery(this).addClass('active');
             }
-        });
+        });*/
     }
 
     e.bar.animate({
@@ -90,42 +89,105 @@ function start() {
 
 }
 
-function demoBoxResize(frame, box, curRes) {
-    var demoSrc = frame.src;
-    frame.src = '';
-    frame.src = demoSrc;
-    var boxHeight;
+function demoBoxResize(box, curRes) {
+    var windowWidth = jQuery(window).width(),
+        boxHeight;
 
-    box.animate({
-        width: curRes
-    }, 800, function() {
-        switch(curRes) {
-            case '480':
-                boxHeight = 400;
-                break;
-            case '540':
-                boxHeight = 400;
-                break;
-            case '640':
-                boxHeight = 400;
-                break;
-            case '720':
-                boxHeight = 290;
-                break;
-            case '768':
-                boxHeight = 290;
-                break;
-            case '800':
-                boxHeight = 290;
-                break;
-            case '960':
-                boxHeight = 180;
-                break;
+    if (windowWidth <= 960) {
+        box.css('width', '100%');
+    }
+
+    var arrCells = {
+        1: {
+            elem: box.find('.cell-1'),
+            width: '16.66666666666667%'
+        },
+        2: {
+            elem: box.find('.cell-2'),
+            width: '66.66666666666667%'
+        },
+        3: {
+            elem: box.find('.cell-3'),
+            width: '16.66666666666667%'
+        },
+        4: {
+            elem: box.find('.cell-4'),
+            width: '100%'
+        },
+        5: {
+            elem: box.find('.cell-5'),
+            width: '33.33333333333333%'
+        },
+        6: {
+            elem: box.find('.cell-6'),
+            width: '33.33333333333333%'
+        },
+        7: {
+            elem: box.find('.cell-7'),
+            width: '33.33333333333333%'
         }
+    }
+
+    switch(curRes) {
+        case '480':
+            boxHeight = 400;
+            arrCells[1].width = '100%';
+            arrCells[2].width = '100%';
+            arrCells[3].width = '100%';
+            arrCells[4].width = '100%';
+            arrCells[5].width = '100%';
+            arrCells[6].width = '100%';
+            arrCells[7].width = '100%';
+            break;
+        case '640':
+            boxHeight = 400;
+            arrCells[1].width = '100%';
+            arrCells[2].width = '100%';
+            arrCells[3].width = '100%';
+            arrCells[4].width = '100%';
+            arrCells[5].width = '100%';
+            arrCells[6].width = '100%';
+            arrCells[7].width = '100%';
+            break;
+        case '768':
+            boxHeight = 290;
+            arrCells[1].width = '50%';
+            arrCells[2].width = '50%';
+            arrCells[3].width = '100%';
+            arrCells[4].width = '100%';
+            arrCells[5].width = '50%';
+            arrCells[6].width = '50%';
+            arrCells[7].width = '100%';
+            break;
+        case '960':
+            boxHeight = 180;
+            arrCells[1].width = '16.66666666666667%';
+            arrCells[2].width = '66.66666666666667%';
+            arrCells[3].width = '16.66666666666667%';
+            arrCells[4].width = '100%';
+            arrCells[5].width = '33.33333333333333%';
+            arrCells[6].width = '33.33333333333333%';
+            arrCells[7].width = '33.33333333333333%';
+            break;
+    }
+
+    jQuery.each(arrCells, function(key, cell) {
+        cell.elem.animate({
+            width: cell.width
+        }, 300);
+    });
+
+    if (windowWidth >= 960) {
+        box.animate({
+            width: curRes,
+            height: boxHeight
+        }, 600);
+    } else {
         box.animate({
             height: boxHeight
-        }, 800);
-    });
+        }, 600);
+    }
+    
 }
 
 function letsTry() {
@@ -170,8 +232,7 @@ jQuery(document).ready(function() {
 
     var resolutions = jQuery('.resolutions'),
         res = resolutions.find('li'),
-        box = jQuery('.demo-box'),
-        frame = box.find('.demo-iframe');
+        box = jQuery('.demo-box');
 
     var btnTry = jQuery('.btn-try'),
         btnDocs = jQuery('.btn-docs'),
@@ -183,7 +244,7 @@ jQuery(document).ready(function() {
         curRes.siblings('li').removeClass('active');
 
         if (!curRes.hasClass('active')) {
-            demoBoxResize(frame, box, curRes.attr('data-res'));
+            demoBoxResize(box, curRes.attr('data-res'));
         }
 
         curRes.addClass('active');

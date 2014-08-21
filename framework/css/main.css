@@ -27,24 +27,24 @@ h2 {
     box-shadow: 0 6px 15px -12px #302E2D;
 }
 
-.demo {
-    padding-top: 15px;
-    background: #EFEFEF;
-}
 .demo-box {
     position: relative;
-    width: 1024px;
+    /*width: 1024px;*/
     height: 180px;
+    padding-top: 15px;
     margin: 0 auto;
     border: 1px solid #DDD;
     border-radius: 3px;
     background: #EFEFEF;
     clear: both;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-.demo .cell {
+.demo-box .cell {
     margin-bottom: 15px;
 }
-.demo .cell > div {
+.demo-box .cell > div {
     height: 40px;
     line-height: 40px;
     background: #123C48;
@@ -56,12 +56,19 @@ h2 {
     transition: background 0.25s ease;
 }
 
-.demo .cell > div:hover {
+.demo-box .cell > div:hover {
     height: 40px;
     line-height: 40px;
     background-color: #29545D;
     border-radius: 3px;
 }
+.demo-box .cell-1 { width: 16.66666666666667%; }
+.demo-box .cell-2 { width: 66.66666666666667%; }
+.demo-box .cell-3 { width: 16.66666666666667%; }
+.demo-box .cell-4 { width: 100%; }
+.demo-box .cell-5 { width: 33.33333333333333%; }
+.demo-box .cell-6 { width: 33.33333333333333%; }
+.demo-box .cell-7 { width: 33.33333333333333%; }
 
 .header {
     color: #302E2D;

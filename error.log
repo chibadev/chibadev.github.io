@@ -124,3 +124,6 @@
 [Tue Aug 19 19:26:26 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico
 [Tue Aug 19 19:53:43 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico
 [Tue Aug 19 19:56:41 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico
+[Thu Aug 21 19:01:48 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico
+[Thu Aug 21 19:06:00 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico
+[Thu Aug 21 20:19:41 2014] [error] [client 172.17.42.1] File does not exist: /var/www/chibadev.github.dev/favicon.ico
