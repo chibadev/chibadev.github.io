@@ -58,7 +58,7 @@ function rotation(num) {
         var nextSlide = '.slider-content [slide-num="' + nextNum + '"]',
             nextNav   = '.slider-nav [slide-num="' + nextNum + '"]';
 
-        /*jQuery(curSlide).animate({
+        jQuery(curSlide).animate({
             opacity: 0
         }, animationSpeed, function() {
             jQuery(curSlide).css('display', 'none');
@@ -69,29 +69,7 @@ function rotation(num) {
             }, animationSpeed, function() {
                 jQuery(nextSlide).addClass('active');
             });
-        });*/
-
-        /*jQuery(curSlide).animate({
-            opacity: 0
-        }, animationSpeed, function() {
-            // jQuery(curSlide).css('display', 'none');
-            jQuery(curSlide).removeClass('active');
         });
-
-        // jQuery(nextSlide).css('display', 'block');
-        jQuery(nextSlide).animate({
-            opacity: 1
-        }, animationSpeed, function() {
-            jQuery(nextSlide).addClass('active');
-        });*/
-
-        // jQuery('.slider-output').append(nextSlide + ' ');
-
-        // jQuery(curSlide).fadeOut();
-        jQuery(curSlide).removeClass('active');
-        
-        // jQuery(nextSlide).fadeIn();
-        jQuery(nextSlide).addClass('active');
 
         jQuery(curNav).removeClass('active');
         jQuery(nextNav).addClass('active');
