@@ -85,6 +85,7 @@ function rotation(num) {
             jQuery(nextSlide).addClass('active');
         });*/
 
+        jQuery('.slider-output').append('* ');
 
         jQuery(curSlide).css('opacity', 0);
         jQuery(curSlide).removeClass('active');
