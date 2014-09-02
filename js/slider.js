@@ -71,7 +71,7 @@ function rotation(num) {
             });
         });*/
 
-        jQuery(curSlide).animate({
+        /*jQuery(curSlide).animate({
             opacity: 0
         }, animationSpeed, function() {
             // jQuery(curSlide).css('display', 'none');
@@ -83,8 +83,15 @@ function rotation(num) {
             opacity: 1
         }, animationSpeed, function() {
             jQuery(nextSlide).addClass('active');
-        });
+        });*/
+
+
+        jQuery(curSlide).css('opacity', 0);
+        jQuery(curSlide).removeClass('active');
         
+        jQuery(nextSlide).css('opacity', 1);
+        jQuery(nextSlide).addClass('active');
+
         jQuery(curNav).removeClass('active');
         jQuery(nextNav).addClass('active');
     }
