@@ -55,7 +55,7 @@ function rotation(num) {
         var curSlide  = '.slider-content [slide-num="' + curNum + '"]',
             curNav    = '.slider-nav [slide-num="' + curNum + '"]';
 
-        var nextSlide = '.slider-content [slide-num="' + nextNum + '"',
+        var nextSlide = '.slider-content [slide-num="' + nextNum + '"]',
             nextNav   = '.slider-nav [slide-num="' + nextNum + '"]';
 
         /*jQuery(curSlide).animate({
@@ -85,7 +85,7 @@ function rotation(num) {
             jQuery(nextSlide).addClass('active');
         });*/
 
-        jQuery('.slider-output').append('* ');
+        // jQuery('.slider-output').append(nextSlide + ' ');
 
         // jQuery(curSlide).fadeOut();
         jQuery(curSlide).removeClass('active');
