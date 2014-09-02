@@ -58,7 +58,7 @@ function rotation(num) {
         var nextSlide = '.slider-content [slide-num="' + nextNum + '"',
             nextNav   = '.slider-nav [slide-num="' + nextNum + '"]';
 
-        jQuery(curSlide).animate({
+        /*jQuery(curSlide).animate({
             opacity: 0
         }, animationSpeed, function() {
             jQuery(curSlide).css('display', 'none');
@@ -69,14 +69,23 @@ function rotation(num) {
             }, animationSpeed, function() {
                 jQuery(nextSlide).addClass('active');
             });
+        });*/
+
+        jQuery(curSlide).animate({
+            opacity: 0
+        }, animationSpeed, function() {
+            jQuery(curSlide).css('display', 'none');
+            jQuery(curSlide).removeClass('active');
         });
-        jQuery(curNav).css({
-            background: 'rgba(255,255,255,0.6)'
+
+        jQuery(nextSlide).css('display', 'block');
+        jQuery(nextSlide).animate({
+            opacity: 1
+        }, animationSpeed, function() {
+            jQuery(nextSlide).addClass('active');
         });
+        
         jQuery(curNav).removeClass('active');
-        jQuery(nextNav).css({
-            background: 'rgba(44, 186, 231, 0.6)'
-        });
         jQuery(nextNav).addClass('active');
     }
 }

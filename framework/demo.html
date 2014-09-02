@@ -13,21 +13,64 @@
         <link rel="stylesheet" type="text/css" href="css/framework.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
 
+        <style>
+            .demo-1 {
+                padding: 50px 0;
+            }
+            .demo-1 [class*="cell-"] {
+                margin-bottom: 20px;
+            }
+            .demo-1 [class*="cell-"] div{
+                height: 50px;
+                line-height: 50px;
+                background: #123C48;
+                color: #fff;
+                text-align: center;
+                border-radius: 5px;
+            }
+        </style>
+
         <title>My Framework</title>
     </head>
 
     <body class="demo">
 
         <div class="box">
-            <div class="row demo-1">
-                <div class="cell s-12 m-6 l-2"><div>2</div></div>
-                <div class="cell s-12 m-6 l-8"><div>8</div></div>
-                <div class="cell s-12 m-12 l-2"><div>2</div></div>
-                <div class="cell s-12 m-12 l-12"><div>12</div></div>
-                <div class="cell s-12 m-6 l-4"><div>4</div></div>
-                <div class="cell s-12 m-6 l-4"><div>4</div></div>
-                <div class="cell s-12 m-12 l-4"><div>4</div></div>
+
+            <div class="row12">
+                <div class="cell-s12">
+                    <h2>.row10</h2>
+                </div>
             </div>
+
+            <div class="row10 demo-1">
+                <div class="cell-s10 cell-m2 cell-l1"><div>1</div></div>
+                <div class="cell-s10 cell-m6 cell-l8"><div>8</div></div>
+                <div class="cell-s10 cell-m2 cell-l1"><div>1</div></div>
+                <div class="cell-s10 cell-m10 cell-l10"><div>10</div></div>
+                <div class="cell-s10 cell-m5 cell-l2"><div>2</div></div>
+                <div class="cell-s10 cell-m5 cell-l2"><div>2</div></div>
+                <div class="cell-s10 cell-m5 cell-l2"><div>2</div></div>
+                <div class="cell-s10 cell-m5 cell-l2"><div>2</div></div>
+                <div class="cell-s10 cell-m10 cell-l2"><div>2</div></div>
+            </div>
+
+            <div class="row12">
+                <div class="cell-s12">
+                    <h2>.row12</h2>
+                </div>
+            </div>
+
+            <div class="row12 demo-1">
+                <div class="cell-s12 cell-m6 cell-l2"><div>2</div></div>
+                <div class="cell-s12 cell-m6 cell-l8"><div>8</div></div>
+                <div class="cell-s12 cell-m12 cell-l2"><div>2</div></div>
+                <div class="cell-s12 cell-m12 cell-l12"><div>12</div></div>
+                <div class="cell-s12 cell-m6 cell-l4"><div>4</div></div>
+                <div class="cell-s12 cell-m6 cell-l4"><div>4</div></div>
+                <div class="cell-s12 cell-m12 cell-l4"><div>4</div></div>
+            </div>
+
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
