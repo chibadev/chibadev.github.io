@@ -87,10 +87,10 @@ function rotation(num) {
 
         jQuery('.slider-output').append('* ');
 
-        jQuery(curSlide).fadeOut();
+        // jQuery(curSlide).fadeOut();
         jQuery(curSlide).removeClass('active');
         
-        jQuery(nextSlide).fadeIn();
+        // jQuery(nextSlide).fadeIn();
         jQuery(nextSlide).addClass('active');
 
         jQuery(curNav).removeClass('active');
