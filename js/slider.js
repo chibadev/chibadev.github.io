@@ -74,11 +74,11 @@ function rotation(num) {
         jQuery(curSlide).animate({
             opacity: 0
         }, animationSpeed, function() {
-            jQuery(curSlide).css('display', 'none');
+            // jQuery(curSlide).css('display', 'none');
             jQuery(curSlide).removeClass('active');
         });
 
-        jQuery(nextSlide).css('display', 'block');
+        // jQuery(nextSlide).css('display', 'block');
         jQuery(nextSlide).animate({
             opacity: 1
         }, animationSpeed, function() {
