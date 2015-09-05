@@ -133,6 +133,7 @@
     background: transparent;
     border: 2px solid #fff;
     border-radius: 50%;
+    opacity: 0.8;
     display: inline-block;
     *display: inline;
     zoom:1;
@@ -189,8 +190,6 @@
     margin-top: -15px;
     width: 30px;
     height: 30px;
-    line-height: 26px;
-    font-size: 26px;
     background: #CF936D;
     cursor: pointer;
     z-index: 11;
@@ -208,7 +207,8 @@
     display: block;
     width: 100%;
     height: 100%;
-    line-height: 30px;
+    line-height: 26px;
+    font-size: 26px;
     text-align: center;
     color: #fff;
 }
