@@ -13,7 +13,7 @@
 
 #slider, #slider div.sliderInner {
     width: 780px;
-    height: 324px;/* Must be the same size as the slider images */
+    height: 328px;/* Must be the same size as the slider images */
 }
 
 #slider {
