@@ -146,6 +146,7 @@
     width: 30px;
     height: 30px;
     border: 1px solid #ccc;
+    cursor: pointer;
 }
 #sliderFrame .slider-prev {
     margin-left: -552px;
