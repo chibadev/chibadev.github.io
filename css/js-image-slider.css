@@ -17,7 +17,7 @@
 }
 
 #slider {
-    background: #fff url(loading.gif) no-repeat 50% 50%;
+    background: #fff;
     position: relative;
     margin: 0 auto; /*center-aligned*/
     transform: translate3d(0,0,0);
@@ -37,7 +37,7 @@
     height: 100%;
 }
 #slider .video {
-    background: transparent url(video.png) no-repeat 50% 50%;
+    background: transparent;
 }
 
 /* Caption styles */
