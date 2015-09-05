@@ -8,7 +8,7 @@
     position: relative;
     width: 780px;
     margin: 20px auto; /*center-aligned*/
-    background: url(http://slavic-podvorye.ru/wp-content/uploads/2015/09/frame.png);
+    /*background: url(http://slavic-podvorye.ru/wp-content/uploads/2015/09/frame.png);*/
 }
 
 #slider, #slider div.sliderInner {
@@ -21,7 +21,45 @@
     position: relative;
     margin: 0 auto; /*center-aligned*/
     transform: translate3d(0,0,0);
-    box-shadow: 0px 1px 5px #999999;
+    /*box-shadow: 0px 1px 5px #999999;*/
+}
+#sliderFrame:before,
+#sliderFrame:after,
+#slider:before,
+#slider:after {
+    position: absolute;
+    content: '';
+    background-image: url(http://slavic-podvorye.ru/wp-content/uploads/2015/09/frame.png);
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+#sliderFrame:before {
+    width: 42px;
+    height: 347px;
+    background-position: 0 0;
+    left: -29px;
+    top: -9px;
+}
+#sliderFrame:after {
+    width: 50px;
+    height: 347px;
+    background-position: -779px 0;
+    right: -20px;
+    top: -9px;
+}
+#slider:before {
+    width: 737px;
+    height: 13px;
+    background-position: -42px 0;
+    left: 13px;
+    top: -9px;
+}
+#slider:after {
+    width: 737px;
+    height: 14px;
+    background-position: -42px -333px;
+    left: 13px;
+    bottom: -9px;
 }
 
 /* image wrapper */
