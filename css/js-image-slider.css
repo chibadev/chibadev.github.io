@@ -6,14 +6,14 @@
 #sliderFrame 
 {
     position: relative;
-    width: 1024px;
+    width: 780px;
     margin: 20px auto; /*center-aligned*/
     background: url(http://slavic-podvorye.ru/wp-content/uploads/2015/09/frame.png);
 }
 
 #slider, #slider div.sliderInner {
-    width: 1024px;
-    height: 436px;/* Must be the same size as the slider images */
+    width: 780px;
+    height: 324px;/* Must be the same size as the slider images */
 }
 
 #slider {
@@ -78,7 +78,7 @@
 /* ------ built-in navigation bullets wrapper ------*/
 /* Note: check themes\2\js-image-slider.css to see how to hide nav bullets */
 #slider div.navBulletsWrapper  {
-    top: 390px;/* Its position is relative to the #slider */
+    top: 330px;/* Its position is relative to the #slider */
     text-align: center;
     background: none;
     position: relative;
