@@ -7,7 +7,7 @@
 {
     position: relative;
     width: 1024px;
-    margin: 0 auto; /*center-aligned*/
+    margin: 20px auto; /*center-aligned*/
 }
 
 #slider, #slider div.sliderInner {
