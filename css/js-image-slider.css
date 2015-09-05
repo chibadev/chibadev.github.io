@@ -189,12 +189,14 @@
     margin-top: -15px;
     width: 30px;
     height: 30px;
+    line-height: 26px;
+    font-size: 26px;
     background: #CF936D;
     cursor: pointer;
     z-index: 11;
 }
 #sliderFrame .slider-prev {
-    margin-left: -420px;
+    margin-left: -417px;
     border-radius: 3px 0 0 3px;
 }
 #sliderFrame .slider-next {
