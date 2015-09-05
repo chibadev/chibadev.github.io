@@ -3,7 +3,7 @@ var sliderOptions=
 	sliderId: "slider",
 	startSlide: 0,
 	effect: "series1",
-	effectRandom: false,
+	effectRandom: true,
 	pauseTime: 2600,
 	transitionTime: 500,
 	slices: 12,
