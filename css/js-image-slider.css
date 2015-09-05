@@ -87,12 +87,13 @@
 /* each bullet */
 #slider div.navBulletsWrapper div 
 {
-    width: 11px;
-    height:11px;
+    width: 8px;
+    height: 8px;
     font-size: 0;
     color: White;/*hide the index number in the bullet element*/
     background: transparent;
     border: 2px solid #fff;
+    border-radius: 50%;
     display: inline-block;
     *display: inline;
     zoom:1;
