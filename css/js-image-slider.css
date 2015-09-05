@@ -150,8 +150,8 @@
 #sliderFrame .slider-prev {
     margin-left: -552px;
 }
-#sliderFrame .slider-prev {
-    margin-left: 1034px;
+#sliderFrame .slider-next {
+    margin-left: 522px;
 }
 #sliderFrame .slider-prev:before,
 #sliderFrame .slider-next:before {
@@ -159,7 +159,7 @@
     width: 100%;
     height: 100%;
     line-height: 30px;
-    text-align: 30px;
+    text-align: center;
     color: #ccc;
 }
 #sliderFrame .slider-prev:before { content: "<"; }
