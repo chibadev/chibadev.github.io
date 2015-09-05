@@ -189,14 +189,17 @@
     margin-top: -15px;
     width: 30px;
     height: 30px;
-    border: 1px solid #ccc;
+    background: #CF936D;
     cursor: pointer;
+    z-index: 11;
 }
 #sliderFrame .slider-prev {
-    margin-left: -552px;
+    margin-left: -420px;
+    border-radius: 3px 0 0 3px;
 }
 #sliderFrame .slider-next {
-    margin-left: 522px;
+    margin-left: 392px;
+    border-radius: 0 3px 3px 0;
 }
 #sliderFrame .slider-prev:before,
 #sliderFrame .slider-next:before {
@@ -205,7 +208,7 @@
     height: 100%;
     line-height: 30px;
     text-align: center;
-    color: #ccc;
+    color: #fff;
 }
-#sliderFrame .slider-prev:before { content: "<"; }
-#sliderFrame .slider-next:before { content: ">"; }
+#sliderFrame .slider-prev:before { content: "‹"; }
+#sliderFrame .slider-next:before { content: "›"; }
