@@ -196,11 +196,11 @@
     z-index: 11;
 }
 #sliderFrame .slider-prev {
-    margin-left: -417px;
+    margin-left: -541px;
     border-radius: 3px 0 0 3px;
 }
 #sliderFrame .slider-next {
-    margin-left: 392px;
+    margin-left: 513px;
     border-radius: 0 3px 3px 0;
 }
 #sliderFrame .slider-prev:before,
