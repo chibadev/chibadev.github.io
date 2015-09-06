@@ -21,7 +21,8 @@
     position: relative;
     margin: 0 auto; /*center-aligned*/
     transform: translate3d(0,0,0);
-    /*box-shadow: 0px 1px 5px #999999;*/
+    border: 1px solid #CF936D;
+    box-shadow: 0px 0px 5px -2px #CF936D;
 }
 /*#sliderFrame:before,
 #sliderFrame:after,
