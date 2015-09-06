@@ -6,14 +6,14 @@
 #sliderFrame 
 {
     position: relative;
-    width: 780px;
+    width: 1024px;
     margin: 20px auto; /*center-aligned*/
     /*background: url(http://slavic-podvorye.ru/wp-content/uploads/2015/09/frame.png);*/
 }
 
 #slider, #slider div.sliderInner {
-    width: 780px;
-    height: 328px;/* Must be the same size as the slider images */
+    width: 1024px;
+    height: 436px;/* Must be the same size as the slider images */
 }
 
 #slider {
@@ -23,7 +23,7 @@
     transform: translate3d(0,0,0);
     /*box-shadow: 0px 1px 5px #999999;*/
 }
-#sliderFrame:before,
+/*#sliderFrame:before,
 #sliderFrame:after,
 #slider:before,
 #slider:after {
@@ -60,7 +60,7 @@
     background-position: -42px -333px;
     left: 13px;
     bottom: -9px;
-}
+}*/
 
 /* image wrapper */
 #slider a.imgLink, #slider div.video {
@@ -116,7 +116,7 @@
 /* ------ built-in navigation bullets wrapper ------*/
 /* Note: check themes\2\js-image-slider.css to see how to hide nav bullets */
 #slider div.navBulletsWrapper  {
-    top: 303px;/* Its position is relative to the #slider */
+    top: 411px;/* Its position is relative to the #slider */
     text-align: center;
     background: none;
     /*opacity: 0.8;*/
