@@ -13,7 +13,7 @@
 
 #slider, #slider div.sliderInner {
     width: 1024px;
-    height: 436px;/* Must be the same size as the slider images */
+    height: 410px;/* Must be the same size as the slider images */
 }
 
 #slider {
@@ -117,7 +117,7 @@
 /* ------ built-in navigation bullets wrapper ------*/
 /* Note: check themes\2\js-image-slider.css to see how to hide nav bullets */
 #slider div.navBulletsWrapper  {
-    top: 411px;/* Its position is relative to the #slider */
+    top: 385px;/* Its position is relative to the #slider */
     text-align: center;
     background: none;
     /*opacity: 0.8;*/
